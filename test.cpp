@@ -69,6 +69,17 @@ VOID startup(LPCTSTR lpApplicationName)
     CloseHandle( pi.hProcess );
     CloseHandle( pi.hThread );
 }
+Void checking()
+{bool status=false;
+	ofstream of;
+	of.open("C:\\mockserverbuild\\\logs\\MissingExe.txt", ios::app);
+	LPSTR dcpath=nullptr;
+	std::vector<std::wstring> dcNativeExecutables;
+	std::vector<std::wstring> missingExecutables;
+	vector<wstring> expectedExecuables;
+	
+expectedExecuables.push_back(L"7z.exe");
+}
 void RegistryCheck() {
     // Common test logic goes here
     bool check,Check_serverinfo;
